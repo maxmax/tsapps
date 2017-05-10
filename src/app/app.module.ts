@@ -17,6 +17,7 @@ import { HeroService }          from './hero.service';
 import { HeroSearchComponent }  from './hero-search.component';
 import { TableComponent }         from './table.component';
 import { EventsComponent }         from './events.component';
+import { EventService }          from './event.service';
 
 @NgModule({
   imports: [
@@ -35,7 +36,7 @@ import { EventsComponent }         from './events.component';
     TableComponent,
     EventsComponent
   ],
-  providers: [ HeroService ],
+  providers: [ HeroService, EventService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

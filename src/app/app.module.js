@@ -22,6 +22,7 @@ var hero_service_1 = require("./hero.service");
 var hero_search_component_1 = require("./hero-search.component");
 var table_component_1 = require("./table.component");
 var events_component_1 = require("./events.component");
+var event_service_1 = require("./event.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -45,7 +46,7 @@ AppModule = __decorate([
             table_component_1.TableComponent,
             events_component_1.EventsComponent
         ],
-        providers: [hero_service_1.HeroService],
+        providers: [hero_service_1.HeroService, event_service_1.EventService],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
